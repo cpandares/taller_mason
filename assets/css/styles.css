@@ -6,10 +6,6 @@
     font-family: sans-serif, Helvetica, Arial;
 }
 
-body{
-    background: url(../img/bg.png);
-}
-
 a{
     color: #01B1EA;
 }
@@ -131,9 +127,10 @@ td{
 
 /*CONTENT*/
 #content{
+  
     margin: 0px auto;
     overflow: hidden;
-    background: white;
+    background: url(../img/bg.png);
 }
 
 /*BARRA LATERAL*/
@@ -289,6 +286,10 @@ button{
     margin-left: 2px !important;
     margin-right: 2px !important;
 }
+.product .card-product{
+    height:400px !important;
+    padding: 0px !important;
+}
 
 .product a{
     color:black;
@@ -301,7 +302,12 @@ button{
    height: 50% !important;
    margin-left: 0 !important;
 }
-
+.product .image-product{
+    display: block;
+   width: 100%;
+   height: 100% !important;
+   margin-left: 0 !important;
+}
 .img_carrito{
     height: 80px;
     display: block;
@@ -364,7 +370,7 @@ button{
     padding-bottom: 10px;
     color: white;
     background: #222222;
-    border-top: 4px solid #01B1EA;
+    border-top: 4px solid red;
 }
 
 /*CARRITO*/

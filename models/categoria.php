@@ -30,8 +30,8 @@ class Categoria{
 		return $categorias;
 	}
 	
-	public function getRandom($limit){
-		$productos = $this->db->query("SELECT * FROM categorias ORDER BY RAND() LIMIT $limit");
+	public function getRandom(){
+		$productos = $this->db->query("SELECT * FROM categorias ORDER BY id ASC LIMIT 4");
 		return $productos;
 	}
 	

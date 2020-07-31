@@ -6,16 +6,27 @@
 
 		<?php while ($product = $productos->fetch_object()): ?>
 			<div class="product">
-				<a href="<?= base_url ?>producto/ver&id=<?= $product->id ?>">
-					<?php if ($product->imagen != null): ?>
-						<img src="<?= base_url ?>uploads/images/<?= $product->imagen ?>" />
-					<?php else: ?>
-						<img src="<?= base_url ?>assets/img/camiseta.png" />
-					<?php endif; ?>
-					<h2><?= $product->nombre ?></h2>
-				</a>
-				<p><?= $product->precio ?></p>
-				<a href="<?=base_url?>carrito/add&id=<?=$product->id?>" class="button">Comprar</a>
+				<div class="card card-product shadow">
+
+					<div class="card-header"><h2><?= $product->nombre ?></h2></div>
+					<div class="card-body p-1">
+						<a href="<?= base_url ?>producto/ver&id=<?= $product->id ?>">
+						<?php if ($product->imagen != null): ?>
+							<img src="<?= base_url ?>uploads/images/<?= $product->imagen ?>" class="image-product" />
+						<?php else: ?>
+							<img src="<?= base_url ?>assets/img/camiseta.png" />
+						<?php endif; ?>
+						
+						</a>
+					</div>
+					<div class="card-footer p-1">
+					<p><?= $product->precio ?></p>
+						<a href="<?=base_url?>carrito/add&id=<?=$product->id?>" class="btn btn-primary btn-block">Comprar</a>	
+					</div>
+
+				</div>
+				
+			
 			</div>
 		<?php endwhile; ?>
 

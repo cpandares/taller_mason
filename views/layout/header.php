@@ -19,11 +19,13 @@
 				<a href="<?=base_url?>categoria/productos">Productos</a>
 
 			</li>
+	
 		<?php while($cat = $categorias->fetch_object()): ?>
 			<li>
 				<a href="<?=base_url?>categoria/ver&id=<?=$cat->id?>"><?=$cat->nombre?></a>
 			</li>
 			<?php endwhile; ?>
+			
 		</ul>
 				
 	</nav>
@@ -31,13 +33,13 @@
 	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="<?=base_url?>assets/img/slider1.jpg" width="100%" height="400" alt="slide-1">
+				<img src="<?=base_url?>assets/img/slider1.jpg" width="100%" height="600" alt="slide-1">
 			</div>
 			<div class="carousel-item">
-				<img src="<?=base_url?>assets/img/slider2.jpg" width="100%" height="400" alt="slider-2">
+				<img src="<?=base_url?>assets/img/slider2.jpg" width="100%" height="600" alt="slider-2">
 			</div>
 			<div class="carousel-item">
-				<img src="<?=base_url?>assets/img/slider3.jpg" width="100%" height="400" alt="slider-2">
+				<img src="<?=base_url?>assets/img/slider3.jpg" width="100%" height="600" alt="slider-2">
 			</div>
 		</div>
 	</div>
